@@ -3,7 +3,7 @@
 Um único repositório, experiências acessadas por URLs independentes, identidade e scripts compartilhados. Sem catálogo ou links internos entre landings.
 
 ## Estrutura
-- `/treino-e-rotina/` — primeiro piloto (educativo, protótipo)
+- `/treino-e-rotina/` — primeiro piloto V2 (educativo, storytelling e interação)
 - `/shared/brand.css` — tokens e componentes estilísticos compartilhados
 - `/shared/motion.js` — progressão narrativa, controle de movimento, interação educativa
 - `/assets/` — logos oficiais e fotografias conceituais provisórias
@@ -36,3 +36,9 @@ Este protótipo pode ser hospedado como site estático (Cloudflare Workers Stati
 - Conectar endereço/WhatsApp comercial após confirmação e revisão da Valéria.
 - Substituir fotos de conceito e revisar a identidade por dispositivo.
 - Migrar a biblioteca de interações para React + TS quando for vantajoso para a diversidade de experiências; manter os mesmos tokens e rotas.
+
+## Revisão V2 (outubro de 2026)
+- Copy reorganizada por cenas: reconhecimento, conflito, três perguntas práticas e microferramenta de planos B.
+- Quatro fotografias editoriais conceituais de resolução maior; imagens de personagem fictícia, não da nutricionista.
+- Landing continua independente e reutiliza /shared/brand.css e /shared/motion.js.
+- V2 exige revisão final da nutricionista e avaliação em desktop e celular antes de campanhas.
