@@ -1,0 +1,11 @@
+(()=>{'use strict';
+const base="Oi, Valéria! Vim pelo Instagram e li a página “Treino em dia. E a vida no improviso?”. Quero entender como funciona o acompanhamento nutricional para ajustar minha alimentação à minha rotina e aos meus treinos. Podemos conversar?";
+const where={antes:'antes do treino',durante:'no meio da correria',depois:'quando chego em casa'};
+const why={tempo:'falta tempo',acesso:'não tenho nada à mão',ideias:'não sei o que preparar'};
+let moment='',obstacle='';
+const link=()=>{const extra=moment&&obstacle?` Meu principal desafio é ${where[moment]}, porque ${why[obstacle]}.`:'';return 'https://wa.me/5535999863773?text='+encodeURIComponent(base+extra)};
+const sync=()=>{document.querySelectorAll('[data-lead-wa],.mobile-contact-bar').forEach(a=>a.href=link())};
+document.querySelectorAll('[data-answer]').forEach(b=>b.addEventListener('click',()=>{moment=b.dataset.answer;obstacle='';sync()}));
+document.querySelectorAll('[data-friction]').forEach(b=>b.addEventListener('click',()=>{obstacle=b.dataset.friction;sync()}));
+sync();
+})();
