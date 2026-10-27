@@ -9,6 +9,11 @@ Um único repositório, experiências acessadas por URLs independentes, identida
 - `/assets/` — logos oficiais e fotografias conceituais provisórias
 - `/` — página neutra, sem listagem de experiências
 
+## Deploy Cloudflare Workers Builds — obrigatório
+Configurar em **Settings → Builds**: Build command `npm run build`; Deploy command `npx wrangler deploy`; Root directory na raiz do repositório. Sem build, a pasta `dist/` não existe e o Wrangler falha.
+
+Instruções completas: [docs/CLOUDFLARE_DEPLOY.md](docs/CLOUDFLARE_DEPLOY.md).
+
 ## Hospedagem na Cloudflare
 Este protótipo pode ser hospedado como site estático (Cloudflare Workers Static Assets / Cloudflare Pages). Defina a pasta pública de publicação com arquivos do site na raiz. Para Workers Static Assets, configure `assets.directory` com a saída da compilação/cópia; não use `single-page-application` para essa versão multipágina. Rotas futuras usam pastas próprias.
 
