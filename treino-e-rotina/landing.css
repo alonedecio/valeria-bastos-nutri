@@ -52,3 +52,13 @@
 .end-v5 .end-copy{font-size:16px;line-height:1.47}.end-v5 .end-quiet{font-size:18px}.end-v5 .pill{width:100%;font-size:13px;line-height:1.2}.end-v5 .end-stamp{bottom:15px}
 }
 @media(max-width:350px){.story-card{grid-template-columns:34% 66%}.story-card-content{padding:12px 11px}.story-card h3{font-size:19px}.story-card p{font-size:12.3px}.choice-conversion .pill{font-size:12px}}
+/* V6 — pequenos ajustes artísticos, sem alterar o design aprovado. */
+.hero .sticker-fun{z-index:7}
+.hero .sparkle-two{left:auto;right:2%;bottom:5%;z-index:4;transform:rotate(15deg);pointer-events:none}
+@media(max-width:720px){
+ .hero .sparkle-two{left:auto;right:3%;bottom:2%;font-size:clamp(29px,7vw,38px);transform:rotate(17deg)}
+ .hero .sticker-fun{left:5%;bottom:8%}
+ .story-card-photo img{object-position:center}
+ .story-card-sun .story-card-photo img{object-position:63% 50%}
+}
+@media(min-width:721px){.story-card-sun .story-card-photo img{object-position:55% 50%}}
