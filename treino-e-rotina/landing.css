@@ -72,3 +72,18 @@
  .story-card-pink .story-card-photo img{object-position:53% 42%}
  .story-card-sky .story-card-photo img{object-position:51% 36%}
 }
+
+/* V7 — respiro óptico: menos condensação e entrelinhas confortáveis sem perder a escala editorial. */
+.hero .hero-title{letter-spacing:-.052em;line-height:1.065}
+.hero .hero-title .hero-line{letter-spacing:-.052em;line-height:1.125;padding-bottom:.025em}
+.hero .hero-title .hero-line-four{letter-spacing:-.045em}
+.story-heading,.quick-win-heading,.choice-title,.end-v5 .end-title{letter-spacing:-.039em;line-height:1.105}
+.end-v5 .end-title{letter-spacing:-.04em;line-height:1.12;text-wrap:balance}
+@media(max-width:720px){
+ .hero .hero-title{font-size:clamp(46px,13.6vw,64px);letter-spacing:-.044em}
+ .hero .hero-title .hero-line{letter-spacing:-.044em;line-height:1.13}
+ .hero .hero-title .hero-line-four{font-size:.73em;letter-spacing:-.035em}
+ .story-heading,.quick-win-heading,.choice-title,.end-v5 .end-title{letter-spacing:-.03em;line-height:1.14}
+ .end-v5 .end-title{font-size:clamp(45px,11vw,72px);letter-spacing:-.03em;line-height:1.15}
+}
+@media(max-width:355px){.hero .hero-title{font-size:clamp(43px,12.6vw,49px)}.end-v5 .end-title{font-size:clamp(41px,11vw,49px)}}

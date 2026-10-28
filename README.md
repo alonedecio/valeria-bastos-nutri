@@ -3,7 +3,8 @@
 Um único repositório, experiências acessadas por URLs independentes, identidade e scripts compartilhados. Sem catálogo ou links internos entre landings.
 
 ## Estrutura
-- `/treino-e-rotina/` — primeiro piloto V2 (educativo, storytelling e interação)
+- `/treino-e-rotina/` — landing 01, storytelling e interação (ajuste tipográfico V7)
+- `/seu-carrinho-suas-escolhas/` — landing 02, exploração interativa de rótulos (V2)
 - `/shared/brand.css` — tokens e componentes estilísticos compartilhados
 - `/shared/motion.js` — progressão narrativa, controle de movimento, interação educativa
 - `/assets/` — logos oficiais e fotografias conceituais provisórias
