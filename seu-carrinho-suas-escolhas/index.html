@@ -9,7 +9,7 @@
 <meta content="Seu carrinho, suas escolhas — Valéria Bastos" property="og:title"/>
 <meta content="Uma experiência prática para comparar alimentos na vida real, sem terrorismo alimentar." property="og:description"/>
 <title>Seu carrinho, suas escolhas | Valéria Bastos</title>
-<meta content="carrinho-v6-revisao-20261028" name="content-version"/>
+<meta content="carrinho-v7-mobile-fino-20261028" name="content-version"/>
 
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -424,6 +424,88 @@ p{overflow-wrap:break-word}
  .note-card .note-title{font-size:29px}
 }
 @media(prefers-reduced-motion:reduce){.hero-restored .pack,.hero-restored .bag{animation:none!important}}
+
+/* V7: ajuste fino com base nas capturas reais de Android (320–430 px) */
+/* O padding shorthand do hero da V6 havia anulado a margem do container .shell. */
+.hero-restored .hero-layout{
+  padding:70px clamp(28px,6.1vw,86px) 75px!important;
+}
+.hero-restored .hero-copy{padding-inline:0;min-width:0;max-width:100%}
+.hero-restored .hero-title,.hero-restored .hero-lede{max-width:100%}
+.hero-restored .hero-title{overflow-wrap:normal;hyphens:none}
+.note-card .note-list{
+  display:block!important;
+  margin:0!important;
+  padding:0!important;
+  list-style:none!important;
+}
+.note-card .note-list li{
+  display:grid!important;
+  grid-template-columns:24px minmax(0,1fr)!important;
+  gap:12px!important;
+  align-items:start!important;
+  padding:13px 0!important;
+  margin:0!important;
+  border-top:1px dashed #c4b5a4;
+  min-width:0!important;
+  font:500 clamp(14px,1.3vw,16px)/1.45 var(--font-body)!important;
+}
+.note-card .note-list .note-mark{
+  display:block!important;
+  align-self:start;
+  font:800 22px/1.1 var(--font-display)!important;
+  color:var(--orange)!important;
+}
+.note-card .note-list .note-copy{
+  display:block!important;
+  min-width:0!important;
+  overflow-wrap:normal!important;
+  word-break:normal!important;
+  white-space:normal!important;
+  line-height:1.45!important;
+  font-size:inherit!important;
+  letter-spacing:0!important;
+}
+.note-card .note-list .note-copy strong{
+  display:inline!important;
+  font-weight:800!important;
+  white-space:normal!important;
+}
+.valeria-v6 .valeria-cta .v-final-cta{min-width:0;white-space:normal;text-align:center}
+.floating-whatsapp{box-sizing:border-box!important}
+.floating-whatsapp span{white-space:normal!important;text-align:center;overflow-wrap:normal!important}
+@media(max-width:760px){
+  .hero-restored .hero-layout{
+    padding:45px clamp(25px,6.5vw,32px) 35px!important;
+  }
+  .hero-restored .hero-title{
+    font-size:clamp(36px,9.8vw,55px)!important;
+    letter-spacing:-.045em!important;
+    line-height:1.09!important;
+    max-width:100%!important;
+  }
+  .hero-restored .hero-lede{max-width:37ch!important}
+  .hero-restored .hero-stage{max-width:100%!important}
+  .note-card .note-list li{
+    grid-template-columns:23px minmax(0,1fr)!important;
+    gap:12px!important;
+    font-size:15px!important;
+    padding-block:14px!important;
+  }
+  .valeria-v6 .care-panel.note-card{
+    padding:clamp(27px,7.2vw,36px) clamp(23px,6.3vw,32px)!important;
+  }
+  .floating-whatsapp{
+    padding-inline:16px!important;
+    font-size:clamp(12.5px,3.8vw,14px)!important;
+  }
+}
+@media(max-width:360px){
+  .hero-restored .hero-layout{padding-inline:25px!important}
+  .hero-restored .hero-title{font-size:clamp(35px,10.2vw,39px)!important}
+  .note-card .note-list li{font-size:14px!important}
+  .floating-whatsapp{font-size:12.5px!important}
+}
 </style>
 </head>
 <body>
@@ -456,7 +538,7 @@ p{overflow-wrap:break-word}
 </div></section>
 <section aria-labelledby="lessons-title" class="lessons" id="tres-olhares"><div class="shell">
 <div class="lessons-top"><div class="reveal"><span class="section-tag">03 / DOIS MACETES PARA LEVAR PRA VIDA</span><h2 class="display section-title" id="lessons-title" style="margin-top:22px">Agora você lê.<br><em style="font-style:normal;color:var(--orange)">E escolhe melhor.</em></h2></div><p class="reveal">Primeiro a lista de ingredientes. Depois os números. Vou te mostrar com exemplos que você encontra na vida real.</p></div>
-<div class="lesson-rows"><article class="lesson-row reveal"><div class="lesson-number">01</div><div class="lesson-copy"><h3>Macete 1: comece pelo primeiro ingrediente.</h3><p><strong>O primeiro ingrediente da lista é o que está presente em maior quantidade no produto.</strong> Depois, os ingredientes aparecem em ordem decrescente de proporção. Então, se um pão diz “multigrãos”, vale conferir qual farinha vem primeiro — sem decidir apenas pela frente da embalagem.</p></div><div class="lesson-demo"><div class="ingredient-card"><small>EXPERIMENTA LER DO COMEÇO</small><p><mark>Farinha de trigo enriquecida</mark>, água, farinha integral, fermento e sementes.</p><div class="micro-example">Se a farinha refinada aparece antes da integral, ela está em maior proporção na fórmula. Isso ajuda a interpretar a promessa da frente.</div></div></div></article>
+<div class="lesson-rows"><article class="lesson-row reveal"><div class="lesson-number">01</div><div class="lesson-copy"><h3>Macete 1: olhe quem vem primeiro.</h3><p><strong>O primeiro ingrediente é o que tem em maior quantidade.</strong> Viu “multigrãos” na frente do pão? Vire o pacote e confira qual farinha vem primeiro. É esse detalhe que a embalagem nem sempre conta.</p></div><div class="lesson-demo"><div class="ingredient-card"><small>EXPERIMENTA LER DO COMEÇO</small><p><mark>Farinha de trigo enriquecida</mark>, água, farinha integral, fermento e sementes.</p><div class="micro-example">Se a farinha refinada vem antes da integral, ela aparece em maior proporção na receita.</div></div></div></article>
 <div aria-labelledby="portion-title" class="portion portion-integrated" id="comparacao"><div class="shell portion-grid"><div class="reveal"><span class="section-tag">MACETE 2 / AGORA OLHA A TABELA</span><h2 class="display" id="portion-title">Parece menos.<br><em>Mas será mesmo?</em></h2><p>Repara: o A declara <strong>6 g em uma porção de 30 g</strong>; o B, <strong>8 g em 50 g</strong>. Parece que o A tem menos açúcar, né? Só que as porções são diferentes. <strong>Compare os dois por 100 g</strong> e veja a diferença.</p></div>
 <div aria-label="Comparação didática entre porções de biscoitos" class="comparison-demo reveal"><span class="meta">EXEMPLO DIDÁTICO · AÇÚCARES ADICIONADOS</span><div aria-label="Escolha base de comparação" class="comparison-toggle" role="group"><button aria-pressed="true" class="active" data-unit="portion" type="button">Ver por porção</button><button aria-pressed="false" data-unit="hundred" type="button">Comparar por 100&nbsp;g</button></div>
 <div class="versus-row"><article class="metric-card metric-a"><span class="metric-pick">PARECE TER MENOS</span><span class="metric-flag">BISCOITO A</span><p id="unit-a">Porção: 30&nbsp;g</p><strong id="value-a">6&nbsp;g</strong><small>de açúcares adicionados</small></article><span class="metric-vs">×</span><article class="metric-card metric-b"><span class="metric-pick">PARECE TER MAIS</span><span class="metric-flag">BISCOITO B</span><p id="unit-b">Porção: 50&nbsp;g</p><strong id="value-b">8&nbsp;g</strong><small>de açúcares adicionados</small></article></div><div aria-live="polite" class="comparison-takeaway" id="comparison-takeaway" role="status"><strong>Por porção, A parece ter menos:</strong> 6 g contra 8 g. Mas são porções diferentes. Toque em “Comparar por 100 g” para colocar os dois na mesma base.</div>
@@ -468,9 +550,9 @@ p{overflow-wrap:break-word}
   <div class="care-kicker">UM BILHETINHO MEU ♡</div>
   <h3 class="note-title">Pra levar na próxima compra:</h3>
   <ul class="note-list">
-   <li><span aria-hidden="true">✓</span> Olhe o <strong>primeiro ingrediente</strong>: é o que aparece em maior quantidade.</li>
-   <li><span aria-hidden="true">✓</span> Compare alimentos semelhantes por <strong>100&nbsp;g ou 100&nbsp;ml</strong>.</li>
-   <li><span aria-hidden="true">♡</span> Lembre do que funciona para a sua vida, também.</li>
+   <li><span class="note-mark" aria-hidden="true">✓</span><span class="note-copy">O <strong>primeiro ingrediente</strong> é o que tem em maior quantidade.</span></li>
+   <li><span class="note-mark" aria-hidden="true">✓</span><span class="note-copy">Compare produtos parecidos por <strong>100&nbsp;g ou 100&nbsp;ml</strong>.</span></li>
+   <li><span class="note-mark" aria-hidden="true">♡</span><span class="note-copy">E lembre: <strong>sua rotina e seu gosto</strong> também contam.</span></li>
   </ul>
   <div class="note-signature">Com carinho, <strong>Valéria ♡</strong></div>
   <button class="note-save" id="download-checklist" type="button">Guardar meu bilhetinho <span aria-hidden="true">↗</span></button>
@@ -480,17 +562,17 @@ p{overflow-wrap:break-word}
   <h2 class="display" id="valeria-title">E se a sua alimentação fosse <em>mais simples?</em></h2>
   <p>Eu posso te ajudar a fazer escolhas que combinem com seus gostos, sua rotina e seus objetivos. Sem plano engessado — com orientação e ajustes de verdade.</p>
   <p class="v-invite">Quer me contar o que está mais difícil hoje? <strong>Vamos conversar.</strong></p>
-  <a class="btn btn-dark v-final-cta" href="https://wa.me/5535999863773?text=Oi%2C%20Val%C3%A9ria!%20Vim%20do%20Instagram%20e%20da%20p%C3%A1gina%20Seu%20carrinho%2C%20suas%20escolhas.%20Gostei%20dos%20macetes%20de%20r%C3%B3tulos%20e%20queria%20entender%20como%20voc%C3%AA%20pode%20me%20ajudar%20a%20melhorar%20minha%20alimenta%C3%A7%C3%A3o%20na%20vida%20real.%20Podemos%20conversar%3F" rel="noopener noreferrer" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="wa-icon" aria-hidden="true" viewBox="0 0 16 16">
+  <a class="btn btn-dark v-final-cta" href="https://wa.me/5535999863773?text=Oi%2C%20Val%C3%A9ria!%20Vim%20pelo%20Instagram%20e%20vi%20os%20macetes%20da%20p%C3%A1gina%20%E2%80%9CSeu%20carrinho%2C%20suas%20escolhas%E2%80%9D.%20Quero%20sua%20ajuda%20para%20comer%20melhor%20e%20fazer%20escolhas%20que%20combinem%20com%20a%20minha%20rotina.%20Como%20funciona%20seu%20acompanhamento%3F" rel="noopener noreferrer" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="wa-icon" aria-hidden="true" viewBox="0 0 16 16">
   <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
 </svg>
-  Conversar com a Valéria
+  Quero sua ajuda pra comer melhor
   </a>
   <span class="cta-fine">Eu vou adorar conhecer sua rotina. ♡</span>
  </div>
 </div></section>
-</main><a aria-label="Conversar com a Valéria pelo WhatsApp" class="floating-whatsapp" href="https://wa.me/5535999863773?text=Oi%2C%20Val%C3%A9ria!%20Vim%20do%20Instagram%20e%20da%20p%C3%A1gina%20Seu%20carrinho%2C%20suas%20escolhas.%20Gostei%20dos%20macetes%20de%20r%C3%B3tulos%20e%20queria%20entender%20como%20voc%C3%AA%20pode%20me%20ajudar%20a%20melhorar%20minha%20alimenta%C3%A7%C3%A3o%20na%20vida%20real.%20Podemos%20conversar%3F" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="wa-icon" aria-hidden="true" viewBox="0 0 16 16">
+</main><a aria-label="Conversar com a Valéria pelo WhatsApp" class="floating-whatsapp" href="https://wa.me/5535999863773?text=Oi%2C%20Val%C3%A9ria!%20Vim%20pelo%20Instagram%20e%20vi%20os%20macetes%20da%20p%C3%A1gina%20%E2%80%9CSeu%20carrinho%2C%20suas%20escolhas%E2%80%9D.%20Quero%20sua%20ajuda%20para%20comer%20melhor%20e%20fazer%20escolhas%20que%20combinem%20com%20a%20minha%20rotina.%20Como%20funciona%20seu%20acompanhamento%3F" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="wa-icon" aria-hidden="true" viewBox="0 0 16 16">
   <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
-</svg><span>Falar com a Valéria</span></a>
+</svg><span>Quero ajuda nas minhas escolhas</span></a>
 <footer class="footer"><div class="shell"><div class="footer-main"><img alt="Valéria Bastos, nutricionista" class="footer-logo" src="/assets/logo-horizontal.png"/><div class="footer-copy">Informação para escolher melhor, não regras para comer com culpa. Este material é educativo e não substitui uma orientação nutricional individualizada.</div></div><div class="footer-small"><span>© 2026 VALÉRIA BASTOS · EXPRESSIVE EVERYDAY</span><span>Conteúdo educativo · Baseado nas orientações da <a href="https://www.gov.br/anvisa/pt-br/assuntos/alimentos/rotulagem/rotulagem-nutricional" rel="noopener noreferrer" target="_blank">Anvisa</a></span></div></div></footer>
 <div aria-live="polite" class="snackbar" id="toast" role="status"></div>
 <script>
