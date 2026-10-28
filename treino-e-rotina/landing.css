@@ -62,3 +62,13 @@
  .story-card-sun .story-card-photo img{object-position:63% 50%}
 }
 @media(min-width:721px){.story-card-sun .story-card-photo img{object-position:55% 50%}}
+
+/* V6 photo direction — reuse user-supplied high-resolution imagery. */
+.hero .hero-image-wrap img{object-position:56% 45%}
+.story-card-pink .story-card-photo img{object-position:53% 48%}
+.story-card-sky .story-card-photo img{object-position:53% 32%}
+@media(max-width:720px){
+ .hero .hero-image-wrap img{object-position:52% 38%}
+ .story-card-pink .story-card-photo img{object-position:53% 42%}
+ .story-card-sky .story-card-photo img{object-position:51% 36%}
+}
